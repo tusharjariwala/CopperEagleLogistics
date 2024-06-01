@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <title>COPPEREAGLE LOGISTICS</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="MobileOptimized" content="320">
+  <!--Start Style -->
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/auth.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/nice-select.css">
+  <link rel="stylesheet" type="text/css" href="./assets/admin/assets/css/style.css">
+  <link rel="stylesheet" id="theme-change" type="text/css" href="#">
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" type="image/png" href="./assets/admin/assets/images/favicon.png">
+</head>
+
+<body>
+  <div class="loader">
+    <div class="spinner">
+      <img src="./assets/admin/assets/images/loader.gif" alt="" />
+    </div>
+  </div>
+  <div class="page-wrapper">
+    <app-root></app-root>
+  </div>
+  <!-- <div class="ad-footer-btm">
+    <p>Copyright 2021 © SplashDash All Rights Reserved.</p>
+  </div> -->
+  <script src="./assets/admin/assets/js/jquery.min.js"></script>
+  <script src="./assets/admin/assets/js/popper.min.js"></script>
+  <script src="./assets/admin/assets/js/bootstrap.min.js"></script>
+  <script src="./assets/admin/assets/js/swiper.min.js"></script>
+  <script src="./assets/admin/assets/js/nice-select.min.js"></script>
+  <script src="./assets/admin/assets/js/custom.js"></script>
+  
+  <script src="./assets/admin/assets/js/datatables.min.js"></script>
+  <script src="./assets/admin/assets/js/dataTables.responsive.min.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var max_fields = 10; //maximum input boxes allowed
+      var wrapper = $(".form-group"); //Fields wrapper
+      var add_button = $(".add_field_button"); //Add button ID
+
+      var x = 1; //initlal text box count
+
+
+      $(add_button).click(function (e) { //on add input button click
+        e.preventDefault();
+        if (x < max_fields) { //max input box allowed
+
+          //text box increment
+          $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+          x++;
+        }
+      });
+
+      $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+
+        e.preventDefault();
+        $(this).parent('div').remove();
+        x--;
+      })
+    });
+
+  </script>
+</body>
+
+</html>

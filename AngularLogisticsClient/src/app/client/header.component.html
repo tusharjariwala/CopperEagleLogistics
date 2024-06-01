@@ -1,0 +1,129 @@
+<!-- Start header -->
+<header id="header" class="stricky">
+	<div class="thm-container clearfix">
+		<div class="logo pull-left">
+			<a href="/client">
+				<img src="assets/client/assets/images/8.png" alt="" height="80px">
+			</a>
+		</div>
+		<div class="header-info pull-right">
+
+			<div class="info-box">
+				<div class="icon-box no-border">
+					<i class="icon icon-Timer"></i>
+				</div>
+				<div class="text-box">
+					<p class="highlighted">Mon - Sat 9.00 - 8.00</p>
+					<p>Sunday Closed</p>
+				</div>
+			</div>
+			<!-- <div class="info-box">
+				<div class="icon-box">
+					<i class="icon icon-Phone2"></i>
+				</div>
+				<div class="text-box">
+					<p class="highlighted">Call Us:</p>
+					<p class="phone-number">(123) 456 7890</p>
+				</div>
+			</div> -->
+			<div class="info-box search-box-wrapper">
+				<div class="icon-box">
+					<i class="flaticon-search51"></i>
+				</div>
+				<form action="#" class="search-box-holder">
+					<div class="search-box">
+						<a routerLink="/client/trackshipment">Track Shipment</a>
+						<!-- <div class="form">
+							<input type="text" placeholder="Track Your Shipment">
+							<button type="submit"><span>GO</span></button>
+						</div> -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End header  -->
+
+<!-- Start mainmenu -->
+<nav class="main-menu-wrapper stricky">
+	<div class="thm-container menu-gradient ">
+		<div class="clearfix">
+			<div class="nav-holder pull-left">
+				<div class="nav-header">
+					<button><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="nav-footer">
+					<ul class="nav">
+						<li>
+							<a routerLink="/client">Home</a>
+
+						</li>
+						<li>
+							<a routerLink="/client/aboutus">about us</a>
+							<!-- <ul class="submenu">
+								<li><a href="team.html">Our Team</a></li>
+								<li><a href="company-history.html">Company History</a></li>
+								<li><a href="clients.html">Our Clients</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="career.html">Career</a></li>
+							</ul> -->
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/services">Services</a>
+							<ul class="submenu">
+								<!-- <li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li> -->
+							</ul>
+						</li>
+						<!-- <li class="has-submenu">
+							<a href="fleet-gallery-1.html">Gallery</a>
+							<ul class="submenu">
+								<li><a href="fleet-gallery-1.html">Fleet Gallery One</a></li>
+								<li><a href="fleet-gallery-2.html">Fleet Gallery Two</a></li>
+							</ul>
+						</li> -->
+						<!-- <li class="has-submenu">
+							<a href="#">Pages</a>
+							<ul class="submenu">
+								<li><a href="404.html">Error 404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							    <li><a href="track-shipment.html">Track Your Shipment</a></li>
+								<li><a href="request-qoute.html">Request a Qoute</a></li>
+							</ul>
+						</li> -->
+						<!-- <li class="has-submenu">
+							<a href="blog-left.html">blog</a>
+							<ul class="submenu">
+								<li><a href="blog-left.html">Blog Left Bar</a></li>
+								<li><a href="blog-right.html">Blog Right Bar</a></li>
+								<li><a href="blog-details.html">Blog Details</a></li>
+							</ul>
+						</li> -->
+						<li><a routerLink="/client/contactus">contact us</a></li>
+
+
+						<li class="has-submenu">
+							<a routerLink="/client/userprofile" *ngIf=IsLoggedIn>Profile</a>
+							<ul class="submenu">
+
+							</ul>
+
+						</li>
+
+						<li class="has-submenu">
+							<a routerLink="/client/login" *ngIf=!IsLoggedIn>Login</a>
+							<ul class="submenu">
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="free-qoute-button pull-right">
+				<a routerLink="/client/request-quote">Bulk Inquiry</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- End mainmenu -->

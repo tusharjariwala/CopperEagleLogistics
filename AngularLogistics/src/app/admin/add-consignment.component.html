@@ -1,0 +1,141 @@
+ <!-- Container Start -->
+ 
+ <div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Consignment</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">Consignment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+               
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD consignment</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form  (ngSubmit)="onSubmit(f)" #f="ngForm" class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="city" class="col-form-label">employee_name</label>
+                                                <select class="select2 form-control" name="employename" #name="ngModel" [(ngModel)]="this.consignmentData.employee_id_fk"  [compareWith]="compareFn">
+                                                    <option value="0">select employee</option>
+                                                    <option *ngFor="let employee of employeelist;" value="{{employee.employee_id_pk}}">{{employee.employee_name}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="city" class="col-form-label">customer_name</label>
+                                                <select class="select2 form-control" name="customername" #custname="ngModel" [(ngModel)]="this.consignmentData.customer_id_fk"  [compareWith]="customercompareFn">
+                                                    <option value="0">select customer</option>
+                                                    <option *ngFor="let customer of customerlist;" value="{{customer.customer_id_pk}}">{{customer.customer_name}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="consignment_number" class="col-form-label">consignment_number</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your consignment number" name="consignmentnumber" #number="ngModel" [(ngModel)]="this.consignmentData.consignment_number" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="package_type" class="col-form-label">package_type</label>
+                                                <input class="form-control" type="number" placeholder="Enter Your package-type" name="package_type"  #packagetype="ngModel" [(ngModel)]="this.consignmentData.package_type" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="deliver_date" class="col-form-label">deliver_date</label>
+                                                <input class="form-control" type="date" placeholder="deliver date" name="deliver_date"  #deliverdate="ngModel" [(ngModel)]="this.consignmentData.deliver_date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="booking_date" class="col-form-label">booking_date</label>
+                                                <input class="form-control" type="date" placeholder="booking date" name="booking_date"  #bookingdate="ngModel" [(ngModel)]="this.consignmentData.booking_date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="sender_address" class="col-form-label">sender_address</label>
+                                                <input class="form-control" type="text" placeholder="sender address" name="sender_address"  #senderaddress="ngModel" [(ngModel)]="this.consignmentData.sender_address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="receiver_address" class="col-form-label">receiver_address</label>
+                                                <input class="form-control" type="text" placeholder="receiver address" name="receiver_address"  #receiveraddress="ngModel" [(ngModel)]="this.consignmentData.receiver_address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="receiver_person" class="col-form-label">receiver_person</label>
+                                                <input class="form-control" type="text" placeholder="receiver person" name="receiver_person" #receiverperson="ngModel" [(ngModel)]="this.consignmentData.receiver_person" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="name" class="col-form-label">name</label>
+                                                <select class="select2 form-control" name="name" #packname="ngModel" [(ngModel)]="this.consignmentData.packagetype_id_fk"  [compareWith]="packagetypecompareFn">
+                                                    <option value="0">select package  name</option>
+                                                    <option *ngFor="let package of packagetypelist;" value="{{package.packagetype_id_pk}}">{{package.name}}</option>  
+                                                </select>
+                                            </div>
+                                        </div>
+                                      
+                                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                                <div class="form-group">
+                                                    <label for="additional-msg" class="col-form-label">description</label>
+                                                    <textarea class="form-control" placeholder="description" name="additional-msg" size="100"  #number="ngModel" [(ngModel)]="this.consignmentData.description" required></textarea>
+                                                </div>
+                                            </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="weight" class="col-form-label">weight</label>
+                                                <input class="form-control" type="text" placeholder="weight" name="weight"  #number="ngModel" [(ngModel)]="this.consignmentData.weight" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+</div>

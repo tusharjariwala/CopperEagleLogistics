@@ -1,0 +1,89 @@
+<app-header-emp></app-header-emp>
+<div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h2 class="page-title bold">Show Consignment</h2>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-link active">Consignment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card table-card">
+                    <div class="card-header pb-0">
+                        <!-- <h4>Show Consignment</h4> -->
+                    <button class="btn btn-success"><a routerLink="/employee/add-consignment-emp">Create</a></button>
+                        <!-- <p class="card-desc">Various Color Available with there Classes</p> -->
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-holder">
+                            <div class="table-responsive">
+                               <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <!-- <th scope="col">employee_name</th>
+                                            <th scope="col">customer_name</th> -->
+                                            <th scope="col">consignment_Details</th>
+                                            <th scope="col">package_type</th>
+                                            <th scope="col">Name</th>
+                                            
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr  *ngFor="let consignment of consignmentlist;let no = index;">
+                                            <td>{{no+1}}</td>
+                                            <!-- <td>{{consignment.employee_name}}</td> -->
+                                            <!-- <td>{{consignment.customer_name}}</td>
+                                             -->
+                                            <td>
+                                                <b>employeename:</b>{{consignment.employee_name}}<br>
+                                                <b>customername:</b>{{consignment.customer_name}}<br>
+                                                <b>Number :</b>    {{consignment.consignment_number}}<br>
+                                                <b>deliver Date :</b>{{consignment.deliver_date}}<br>
+                                                <b>booking Date :</b>{{consignment.booking_date}}<br>
+                                                <b>sender Address :</b>{{consignment.sender_address}}<br>
+                                                <b>receiver Address :</b>{{consignment.receiver_address}}<br>
+                                                <b>receiver Person :</b>{{consignment.receiver_person}}<br>
+                                                <b>description : </b> {{consignment.description}}<br>
+                                                <b>weight : </b>{{consignment.weight}}<br>
+                                             </td>
+                                            
+                                             <td>{{consignment.package_type}}</td>
+                                            
+                                            <td>{{consignment.name}}</td>
+                                            
+                                             <td><a [routerLink]="['/employee/edit-consignment-emp/',consignment.consignment_id_pk]"> <i class="fas fa-edit"><span class="icon-text">edit</span></i></a><br>
+                                             <a (click)="DeleteConsignment(consignment.consignment_id_pk)"><i class="fas fa-trash">
+                                              <span class="icon-text">Delete</span></i></a></td>
+                                              <td><a [routerLink]="['/employee/show-consingmentproduct-emp/',consignment.consignment_id_pk]">View consignmentproduct</a></td>
+                                        </tr>
+                                   
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+    </div>
+

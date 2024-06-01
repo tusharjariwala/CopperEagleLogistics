@@ -1,0 +1,73 @@
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>Contact Us</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Contact Us</span></li>
+		</ul>
+	</div>
+</section>
+
+<section class="sec-padding contact-page-content">
+	<div class="thm-container">
+		<div class="sec-title">
+			<h2><span>Get in touch</span></h2>
+			<p>Have any questions? We are always happy to help. Do not hesitate to call us or Fill up the form below. We try to get back as soon as possible..</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7 col-sm-6 col-xs-12 pull-left">
+				<form method="post"  #form = "ngForm"(ngSubmit)="onsubmit(form)">
+					<p><input type="text" name="name" placeholder="Name" #contactname = "ngModel"
+						[(ngModel)]="this.contactdata.contact_name" class="form-control"placeholder="Enter name"></p>
+
+					<p><input type="text" name="email" placeholder="Email" #contactemail="ngModel"
+						 [(ngModel)]="this.contactdata.contact_email" class="form-control" ></p>
+
+					<p><input type="text" name="subject" placeholder="Subject" #contactsubject="ngModel"
+						[(ngModel)]="this.contactdata.contact_subject" class="form-control"></p>
+
+					<p><textarea name="message" placeholder="Message" #contactmessage="ngModel"
+						[(ngModel)]="this.contactdata.contact_message" class="form-control"></textarea></p>
+
+					<input type = "submit" class = "btn btn-success">
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12 pull-right">
+				<div class="contact-info">
+					<ul>
+						<li>
+							<div class="icon-box">
+								<i class="icon icon-Pointer"></i>
+							</div>
+							<div class="content">
+								<p>CopperEagle<br> 215, Mallin Street <br>	New York, NY 100 254</p>
+							</div>
+						</li>
+						<li>
+							<div class="icon-box">
+								<i class="icon icon-Plaine"></i>
+							</div>
+							<div class="content">
+								<p>info@CopperEagle.contact.com <br>support@CopperEagle.com</p>
+							</div>
+						</li>
+						<li>
+							<div class="icon-box">
+								<i class="icon icon-Phone2"></i>
+							</div>
+							<div class="content">
+								<p>+0120  123 4 56 789 <br>+0120  987 65419</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-md-12">				
+				<div class="google-map" id="contact-page-google-map" data-map-lat="-37.812802" data-map-lng="144.956981" data-map-zoom="10" data-map-title="Envato HQ"></div>
+			</div>
+		</div> -->
+	</div>
+</section>
+

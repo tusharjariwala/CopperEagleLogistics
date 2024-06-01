@@ -1,0 +1,90 @@
+
+ <div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">containercustomer</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">containercustomer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+               
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD containercustomer</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form  (ngSubmit)="onSubmit(f)" #f="ngForm" class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div class="row">
+                            
+                                        <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="container_name" class="col-form-label">container_name</label>
+                                                <select class="select form-control" name="container_name"  #containername="ngModel" [(ngModel)]="this.containercustomerData.container_id_fk"  [compareWith]="compareFn">
+                                                    <option value="0">select containername</option>
+                                                    <option *ngFor="let container of containerlist;" value="{{container.container_id_pk}}">{{container.container_name}}</option>
+                                                </select>
+                                            </div>
+                                        </div> -->
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="customer_name" class="col-form-label">customer_name</label>
+                                                <select class="select form-control" name="customername"  #customername="ngModel" 
+                                                [(ngModel)]="this.containercustomerData.customer_id_fk"  [compareWith]="customercompareFn">
+                                                    <option value="0">select customer name</option>
+                                                    <option *ngFor="let customer of customerlist;" value="{{customer.customer_id_pk}}">{{customer.customer_name}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                           
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="no_of_parcels" class="col-form-label">no_of_parcels</label>
+                                                <input class="form-control" type="text" placeholder="Enter  no of parcels" name="noofparcels" 
+                                                #noofparcels="ngModel" [(ngModel)]="this.containercustomerData.no_of_parcels" required>
+                                            </div>
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                  
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+
+

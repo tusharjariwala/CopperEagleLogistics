@@ -1,0 +1,69 @@
+<!--  -->
+
+<!-- Start mainmenu -->
+
+	
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>SignUp</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Create a New Account</span></li>
+		</ul>
+	</div>
+</section>
+
+
+<section class="sec-padding  faq-page career-page">
+	<div class="thm-container">
+		<div class="row">
+			
+			<div class="col-md-9 pull-right">
+				<div class="sec-title">
+					<h2><span>Welcome , SignUp Page</span></h2>
+					
+				</div>
+
+                <form method="post" class="contact-form track-shipment-form" #form ="ngForm" (ngSubmit)="onsubmit(form)">
+                    <div class="form-grp half">
+					    <input type="text" name="customername" placeholder="customername" #customer_name="ngModel" [(ngModel)]= "this.customerdata.customer_name" placeholder="customername"  
+						    class="form-control">
+                            <br>
+                        <input type="text" name="companyname" placeholder="companyname" #company_name="ngModel" [(ngModel)]="this.customerdata.company_name" 
+						    class="form-control">
+                            <br>
+                        <input type="text" name="companycontact" placeholder="companycontact" #company_contact="ngModel" [(ngModel)]="this.customerdata.company_contact"
+                            class="form-control">
+                            <br>
+                        <input type="password" name="phonenumber" placeholder="password" #phonenumber="ngModel" [(ngModel)]="this.customerdata.phonenumber"
+                            class="form-control">
+                            <br>
+                        <input type="text" name="email" placeholder="email" #email="ngModel" [(ngModel)]="this.customerdata.email"
+						    class="form-control">
+                            <br>
+                        <input type="text" name="address" placeholder="address" #address1="ngModel" [(ngModel)]="this.customerdata.address1" 
+                            class="form-control">
+                            <br>
+
+						<div class = "form-group" >
+							<div class="controls">
+								<select class="form-control" name="city_id_fk" #city_id_fk="ngModel" [(ngModel)]="this.customerdata.city_id_fk" 
+								  [compareWith]="compareFn">
+								 <option value="0">select city</option>
+								 <option *ngFor="let city of citylist;" value="{{city.city_id_pk}}">{{city.city_name}}</option>
+								</select>
+							</div>
+						</div>
+                        <button type="submit" class="thm-btn" >submit <i class="fa fa-arrow-circle-right"></i></button>
+                    </div>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+

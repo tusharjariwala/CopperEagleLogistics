@@ -1,0 +1,87 @@
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.exe
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.deps.json
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.runtimeconfig.json
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.runtimeconfig.dev.json
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\ref\logistics_API.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\logistics_API.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eCommanLib.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eOperationlib.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eOperationlib.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eOperationlib.dll.config
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eCommanLib.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\eCommanLib.dll.config
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.AssemblyReference.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.AssemblyInfoInputs.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.AssemblyInfo.cs
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.CoreCompileInputs.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\staticwebassets\logistics_API.StaticWebAssets.Manifest.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\staticwebassets\logistics_API.StaticWebAssets.xml
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\scopedcss\bundle\logistics_API.styles.css
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.RazorTargetAssemblyInfo.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.CopyComplete
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\ref\logistics_API.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\obj\Debug\net5.0\logistics_API.genruntimeconfig.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\appsettings.json
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\logistics_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\appsettings.Development.json
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\appsettings.json
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.StaticWebAssets.xml
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.exe
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.deps.json
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.runtimeconfig.json
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.runtimeconfig.dev.json
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\logistics_API.pdb
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\System.Data.SqlClient.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eCommanLib.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eOperationlib.dll
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eOperationlib.pdb
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eOperationlib.dll.config
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eCommanLib.pdb
+E:\backup\git program\project_logistics\logistics_API\bin\Debug\net5.0\eCommanLib.dll.config
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.AssemblyReference.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.GeneratedMSBuildEditorConfig.editorconfig
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.AssemblyInfoInputs.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.AssemblyInfo.cs
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.CoreCompileInputs.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.MvcApplicationPartsAssemblyInfo.cs
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.MvcApplicationPartsAssemblyInfo.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\scopedcss\bundle\logistics_API.styles.css
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\logistics_API.StaticWebAssets.Manifest.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\logistics_API.StaticWebAssets.Pack.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\msbuild.logistics_API.Microsoft.AspNetCore.StaticWebAssets.props
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\msbuild.build.logistics_API.props
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.logistics_API.props
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.logistics_API.props
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.RazorTargetAssemblyInfo.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.csproj.CopyComplete
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.dll
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\refint\logistics_API.dll
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.pdb
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\logistics_API.genruntimeconfig.cache
+E:\backup\git program\project_logistics\logistics_API\obj\Debug\net5.0\ref\logistics_API.dll

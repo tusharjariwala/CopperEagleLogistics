@@ -1,0 +1,54 @@
+<!--  -->
+
+<!-- Start mainmenu -->
+
+	
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>Login</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Login</span></li>
+		</ul>
+	</div>
+</section>
+
+
+<section class="sec-padding  faq-page career-page">
+	<div class="thm-container">
+		<div class="row">
+			
+			<div class="col-md-9 pull-right">
+				<div class="sec-title">
+					<h2><span>Welcome , Login Page</span></h2>
+					
+				</div>
+
+				<form method="post"  class="contact-form track-shipment-form" #form ="ngForm" (ngSubmit)="onsubmit(form)">
+					
+					<div class="form-grp half">
+						<input type="text" name="employee_email" placeholder="email" #employee_email="ngModel"[(ngModel)]="this.authData.employee_email">
+
+						<br>
+						<br>
+
+						<input type="password" name="userpassword" placeholder="password" #userpassword="ngModel"[(ngModel)]="this.authData.password">
+
+						<br>
+						<br>
+					
+						<button type="submit" class="thm-btn" >Login <i class="fa fa-arrow-circle-right"></i></button>
+					</div>
+				</form>
+
+			</div>
+
+
+			
+
+		</div>
+	</div>
+</section>
+

@@ -1,0 +1,194 @@
+<!-- Start mainmenu -->
+<!-- <nav class="main-menu-wrapper stricky">
+	<div class="thm-container menu-gradient ">
+		<div class="clearfix">
+			<div class="nav-holder pull-left">
+				<div class="nav-header">
+					<button><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="nav-footer">
+					<ul class="nav">
+						<li class="has-submenu">
+					<a routerLink="/client">Home</a>
+					<ul class="submenu">
+						<li><a href="index-2.html">Home Two</a></li>
+						<li><a href="index-3.html">Home Three</a></li>
+						<li><a href="index-4.html">Home Four</a></li>
+					</ul>
+				</li>
+						<li class="has-submenu">
+							<a routerLink="/client/aboutus">about us</a>
+							<ul class="submenu">
+								<li><a href="team.html">Our Team</a></li>
+								<li><a href="company-history.html">Company History</a></li>
+								<li><a href="clients.html">Our Clients</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="career.html">Career</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/services">Services</a>
+							<ul class="submenu">
+								<li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="fleet-gallery-1.html">Gallery</a>
+							<ul class="submenu">
+								<li><a href="fleet-gallery-1.html">Fleet Gallery One</a></li>
+								<li><a href="fleet-gallery-2.html">Fleet Gallery Two</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Pages</a>
+							<ul class="submenu">
+								<li><a href="404.html">Error 404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							<li><a href="track-shipment.html">Track Your Shipment</a></li>
+								<li><a href="request-qoute.html">Request a Qoute</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="blog-left.html">blog</a>
+							<ul class="submenu">
+								<li><a href="blog-left.html">Blog Left Bar</a></li>
+								<li><a href="blog-right.html">Blog Right Bar</a></li>
+								<li><a href="blog-details.html">Blog Details</a></li>
+							</ul>
+						</li>
+						<li><a routerLink="/client/contactus">contact us</a></li>
+
+						<li class="has-submenu">
+							<a routerLink="/client/login">Login</a>
+							<ul class="submenu">
+								 <li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="free-qoute-button pull-right">				
+				<a routerLink="/client/request-quote">Bulk Inquiry</a>
+			</div>
+		</div>
+	</div>
+</nav> -->
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>Request a Quote</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Request a Qoute</span></li>
+		</ul>
+	</div>
+</section>
+
+<section class="sec-padding">
+	<div class="thm-container">
+		<div class="sec-title">
+			<h2><span>request a quote</span></h2>
+			<p>Please complete the form below and submit your freight quote request to our premium Freightnet members. You will receive multiple quotations which you can compare before selecting your shipping provider.</p>
+		</div>
+		<div class="row">
+			<div class="col-md-7 col-sm-12 col-xs-12 pull-left">
+				<form method ="post" class="contact-form contact-page"  #form = "ngForm"(ngSubmit)="onsubmit(form)">
+
+					<!-- <p><input type="text" name="freight type" #freighttype = "ngModel"
+						[(ngModel)]="this.freightdata.freight_type" class="form-control"placeholder="Enter freight type"></p> -->
+						<div class = "form-group" >
+							<div class="controls">
+							  <select class="form-control" name="freighttype" #freighttype="ngModel" [(ngModel)]="this.freightdata.freight_type">
+								<option value="">select Freight Type</option>
+								<option value="1">Less Than TruckLoad</option>
+								<option value="2">TruckLoad</option>
+								<option value="3">Air Freight</option>
+								<option value="4">Blanket Wrap or Van Move</option>
+								<option value="3">Intermodal Rail Freight</option>
+								<option value="3">International Shipping</option>
+							  </select>
+							</div>
+						</div>
+
+
+					<!-- <p><input type="text" placeholder="City of Departure" name="city-of-departure"></p> -->
+					<div class = "form-group" >
+						<div class="controls">
+						  <select class="form-control" name="departure_id" #departure_id="ngModel" [(ngModel)]="this.freightdata.departure_id" 
+						  [compareWith]="compareFn">
+							<option value="0">select city</option>
+							<option *ngFor="let city of citylist;" value="{{city.city_id_pk}}">{{city.city_name}}</option>
+						  </select>
+						</div>
+					</div>
+
+
+					<!-- <p><input type="text" placeholder="Delivery City" name="delivery-city"></p> -->
+					<div class = "form-group" >
+						<div class="controls">
+						  <select class="form-control" name="deliverCity_id" #deliverCity_id="ngModel" [(ngModel)]="this.freightdata.deliverCity_id" 
+						  [compareWith]="compareFn">
+							<option value="0">select city</option>
+							<option *ngFor="let city of citylist;" value="{{city.city_id_pk}}">{{city.city_name}}</option>
+						  </select>
+						</div>
+					</div>
+
+
+					<p><input type="text" name="total gross weight" #freighttype = "ngModel"
+						[(ngModel)]="this.freightdata.total_gross_weight" class="form-control"placeholder="Enter total gross weight"></p>
+
+
+					<p><input type="text" name="dimention" #freighttype = "ngModel"
+						[(ngModel)]="this.freightdata.dimention" class="form-control"placeholder="Enter dimention"></p>
+
+
+					<p><input type="text" name="email" #freighttype = "ngModel"
+						[(ngModel)]="this.freightdata.email" class="form-control"placeholder="Enter email"></p>
+
+
+					<p><input type="text" name="message" #freighttype = "ngModel"
+						[(ngModel)]="this.freightdata.message" class="form-control"placeholder="Enter message"></p>
+						
+					<button type="submit" class="thm-btn">Submit Now <i class="fa fa-arrow-right"></i></button>
+				</form>
+			</div>
+			<div class="col-md-5 hidden-sm text-right pull-right">
+				<img src="assets/client/assets/images/request-qoute-man.jpg" alt="Awesome Image"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="sec-padding rqa-feature">
+	<div class="thm-container">
+		<div class="row">
+			<div class="col-md-4 col-sm-6 bg-1 text-center">
+				<div class="single-rqa-feature">
+					<i class="fa fa-globe"></i>
+					<h3>Safe and Secure</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adip isci velit, sed quia non numquam.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 bg-2 text-center">
+				<div class="single-rqa-feature">
+					<i class="fa fa-globe"></i>
+					<h3>Great support</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adip isci velit, sed quia non numquam.</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 bg-3 text-center">
+				<div class="single-rqa-feature">
+					<i class="fa fa-globe"></i>
+					<h3>fast delivery</h3>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adip isci velit, sed quia non numquam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

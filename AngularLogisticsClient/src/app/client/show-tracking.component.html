@@ -1,0 +1,136 @@
+<!-- Start mainmenu -->
+<!-- <nav class="main-menu-wrapper stricky">
+	<div class="thm-container menu-gradient ">
+		<div class="clearfix">
+			<div class="nav-holder pull-left">
+				<div class="nav-header">
+					<button><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="nav-footer">
+					<ul class="nav">
+						<li class="has-submenu">
+							<a routerLink="/client">Home</a>
+							<ul class="submenu">
+						<li><a href="index-2.html">Home Two</a></li>
+						<li><a href="index-3.html">Home Three</a></li>
+						<li><a href="index-4.html">Home Four</a></li>
+					</ul>
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/aboutus">about us</a>
+							<ul class="submenu">
+								<li><a href="team.html">Our Team</a></li>
+								<li><a href="company-history.html">Company History</a></li>
+								<li><a href="clients.html">Our Clients</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="career.html">Career</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/services">Services</a>
+							<ul class="submenu">
+								<li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="fleet-gallery-1.html">Gallery</a>
+							<ul class="submenu">
+								<li><a href="fleet-gallery-1.html">Fleet Gallery One</a></li>
+								<li><a href="fleet-gallery-2.html">Fleet Gallery Two</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Pages</a>
+							<ul class="submenu">
+								<li><a href="404.html">Error 404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							<li><a href="track-shipment.html">Track Your Shipment</a></li>
+								<li><a href="request-qoute.html">Request a Qoute</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="blog-left.html">blog</a>
+							<ul class="submenu">
+								<li><a href="blog-left.html">Blog Left Bar</a></li>
+								<li><a href="blog-right.html">Blog Right Bar</a></li>
+								<li><a href="blog-details.html">Blog Details</a></li>
+							</ul>
+						</li>
+						<li><a routerLink="/client/contactus">contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="free-qoute-button pull-right">
+				<a href="request-qoute.html">Get Free Quote</a>
+			</div>
+		</div>
+	</div>
+</nav> -->
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>Display Orders</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Orders</span></li>
+		</ul>
+	</div>
+</section>
+
+<section class="sec-padding  faq-page career-page">
+	<div class="thm-container">
+		<div class="row">
+
+			<div class="col-md-10 pull-right">
+				<div class="sec-title">
+					<h2><span>Display Tracking Details</span></h2>
+				</div>
+
+				<div class="accrodion-grp" data-grp-name="faq-accrodion" *ngIf=showContainer>
+					<div>
+						<div class="accrodion active">
+							<div class="accrodion-title">
+								<h4>Container_Number:{{Containerdata.container_number1}}</h4>
+								
+							</div>
+							<div class="accrodion-content">
+								<p>Container name:{{Containerdata.container_name}}</p>
+								<p>Deliver date:{{Containerdata.delivery_days}}</p>
+								<p>Departed date :{{Containerdata.departed_date}}</p>
+								<p>Expected date:{{Containerdata.expected_date}}</p>
+								<p>Employee name:{{Containerdata.employee_name}}</p>
+								<p>Employee email:{{Containerdata.employee_email}}</p>
+								<p>Employee contact:{{Containerdata.employee_contactno}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accrodion-grp" data-grp-name="faq-accrodion" *ngIf=showConsignment>
+					<div>
+						<div class="accrodion active">
+							<div class="accrodion-title">
+								<h4>Consignment_Number:{{Consignmentdata.consignment_number}}</h4>
+							</div>
+							<div class="accrodion-content">
+								
+								<p>Deliver date:{{Consignmentdata.deliver_date}}</p>
+								<p>Sender address :{{Consignmentdata.sender_address}}</p>
+								<p>Reciever address:{{Consignmentdata.receiver_address}}</p>
+								<p>Reciever person:{{Consignmentdata.receiver_person}}</p>
+								<p>Employee name:{{Consignmentdata.employee_name}}</p>
+								<p>Employee email:{{Consignmentdata.employee_email}}</p>
+								<p>Employee contact:{{Consignmentdata.employee_contactno}}</p>
+								<p>Customer name:{{Consignmentdata.customer_name}}</p>
+								<p>Company name:{{Consignmentdata.company_name}}</p>
+								<p>Company contact:{{Consignmentdata.company_contact}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

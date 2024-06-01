@@ -1,0 +1,140 @@
+<!-- Start mainmenu -->
+<!-- <nav class="main-menu-wrapper stricky">
+	<div class="thm-container menu-gradient ">
+		<div class="clearfix">
+			<div class="nav-holder pull-left">
+				<div class="nav-header">
+					<button><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="nav-footer">
+					<ul class="nav">
+						<li class="has-submenu">
+					<a routerLink="/client">Home</a>
+					<ul class="submenu">
+						<li><a href="index-2.html">Home Two</a></li>
+						<li><a href="index-3.html">Home Three</a></li>
+						<li><a href="index-4.html">Home Four</a></li>
+					</ul>
+				</li>
+						<li class="has-submenu">
+							<a routerLink="/client/aboutus">about us</a>
+							<ul class="submenu">
+								<li><a href="team.html">Our Team</a></li>
+								<li><a href="company-history.html">Company History</a></li>
+								<li><a href="clients.html">Our Clients</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="career.html">Career</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/services">Services</a>
+							<ul class="submenu">
+								<li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="fleet-gallery-1.html">Gallery</a>
+							<ul class="submenu">
+								<li><a href="fleet-gallery-1.html">Fleet Gallery One</a></li>
+								<li><a href="fleet-gallery-2.html">Fleet Gallery Two</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Pages</a>
+							<ul class="submenu">
+								<li><a href="404.html">Error 404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							<li><a href="track-shipment.html">Track Your Shipment</a></li>
+								<li><a href="request-qoute.html">Request a Qoute</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="blog-left.html">blog</a>
+							<ul class="submenu">
+								<li><a href="blog-left.html">Blog Left Bar</a></li>
+								<li><a href="blog-right.html">Blog Right Bar</a></li>
+								<li><a href="blog-details.html">Blog Details</a></li>
+							</ul>
+						</li>
+						<li><a routerLink="/client/contactus">contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="free-qoute-button pull-right">				
+				<a routerLink="/client/request-quote">Bulk Inquiry</a>
+			</div>
+		</div>
+	</div>
+</nav> -->
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>UserProfile</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Userprofile</span></li>
+		</ul>
+	</div>
+</section>
+
+
+<section class="sec-padding  faq-page career-page">
+	<div class="thm-container">
+		<div class="row">
+			<div class="col-md-4 pull-left">
+				<div class="single-sidebar-widget">
+					<div class="special-links">
+						<ul>
+							<li><a routerLink="/client/userprofile">Userprofile</a></li>
+							<li><a routerLink="/client/order">Order</a></li>
+							<li><a routerLink="/client/logout">LogOut</a></li>
+						</ul>
+					</div>					
+				</div>
+			
+			</div>
+			<div class="col-md-8 pull-right">
+
+				<form method="post" class="contact-form track-shipment-form" #form ="ngForm" (ngSubmit)="onsubmit(form)">
+                    <div class="form-grp half">
+					    <input type="text" name="customername" placeholder="customername" #customer_name="ngModel" [(ngModel)]= "this.customerdata.customer_name" placeholder="customername"  
+						    class="form-control">
+                            <br>
+                        <input type="text" name="companyname" placeholder="companyname" #company_name="ngModel" [(ngModel)]="this.customerdata.company_name" 
+						    class="form-control">
+                            <br>
+                        <input type="text" name="companycontact" placeholder="companycontact" #company_contact="ngModel" [(ngModel)]="this.customerdata.company_contact"
+                            class="form-control">
+                            <br>
+                        <input type="text" name="phonenumber" placeholder="phonenumber" #phonenumber="ngModel" [(ngModel)]="this.customerdata.phonenumber"
+                            class="form-control">
+                            <br>
+                        <input type="text" name="email" placeholder="email" #email="ngModel" [(ngModel)]="this.customerdata.email"
+						    class="form-control">
+                            <br>
+                        <input type="text" name="address" placeholder="address" #address1="ngModel" [(ngModel)]="this.customerdata.address1" 
+                            class="form-control">
+                            <br>
+
+						<div class = "form-group" >
+							<div class="controls">
+								<select class="form-control" name="city_id_fk" #city_id_fk="ngModel" [(ngModel)]="this.customerdata.city_id_fk" 
+								  [compareWith]="compareFn">
+								 <option value="0">select city</option>
+								 <option *ngFor="let city of citylist;" value="{{city.city_id_pk}}">{{city.city_name}}</option>
+								</select>
+							</div>
+						</div>
+                        <button type="submit" class="thm-btn" >submit <i class="fa fa-arrow-circle-right"></i></button>
+                    </div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+

@@ -1,0 +1,118 @@
+<!-- Start mainmenu -->
+<!-- <nav class="main-menu-wrapper stricky">
+	<div class="thm-container menu-gradient ">
+		<div class="clearfix">
+			<div class="nav-holder pull-left">
+				<div class="nav-header">
+					<button><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="nav-footer">
+					<ul class="nav">
+						<li class="has-submenu">
+					<a routerLink="/client">Home</a>
+					<ul class="submenu">
+						<li><a href="index-2.html">Home Two</a></li>
+						<li><a href="index-3.html">Home Three</a></li>
+						<li><a href="index-4.html">Home Four</a></li>
+					</ul>
+				</li>
+						<li class="has-submenu">
+							<a routerLink="/client/aboutus">about us</a>
+							<ul class="submenu">
+								<li><a href="team.html">Our Team</a></li>
+								<li><a href="company-history.html">Company History</a></li>
+								<li><a href="clients.html">Our Clients</a></li>
+								<li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="career.html">Career</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a routerLink="/client/services">Services</a>
+							<ul class="submenu">
+								<li><a href="single-service.html">Service Details</a></li>
+								<li><a href="pricing.html">Our Pricing</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="fleet-gallery-1.html">Gallery</a>
+							<ul class="submenu">
+								<li><a href="fleet-gallery-1.html">Fleet Gallery One</a></li>
+								<li><a href="fleet-gallery-2.html">Fleet Gallery Two</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="#">Pages</a>
+							<ul class="submenu">
+								<li><a href="404.html">Error 404 page</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							<li><a href="track-shipment.html">Track Your Shipment</a></li>
+								<li><a href="request-qoute.html">Request a Qoute</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="blog-left.html">blog</a>
+							<ul class="submenu">
+								<li><a href="blog-left.html">Blog Left Bar</a></li>
+								<li><a href="blog-right.html">Blog Right Bar</a></li>
+								<li><a href="blog-details.html">Blog Details</a></li>
+							</ul>
+						</li>
+						<li><a routerLink="/client/contactus">contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="free-qoute-button pull-right">				
+				<a routerLink="/client/request-quote">Bulk Inquiry</a>
+			</div>
+		</div>
+	</div>
+</nav> -->
+<!-- End mainmenu -->
+
+<section class="inner-banner">
+	<div class="thm-container">
+		<h2>Track your Shipment</h2>
+		<ul class="breadcumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><span>Tracking</span></li>
+		</ul>
+	</div>
+</section>
+
+
+<section class="sec-padding  faq-page career-page">
+	<div class="thm-container">
+		<div class="row">
+			<div class="col-md-11 pull-right">
+				<div class="sec-title">
+					<h2><span>Track any Freight Management shipment</span></h2>
+					<p>Track any BestLogistics Freight Management shipment. If you require maximum visibility to your customer Freight Management transactions, contact your BestLogistics Representative, or local BestLogistics Service Center.</p>
+				</div>
+
+				<form method="post" class="contact-form track-shipment-form" #form = "ngForm"(ngSubmit)="onsubmit(form)">
+					<ul>
+						<li class="clearfix">
+							<div class="label">
+								Enter Tracking Number
+							</div>
+							<div class="content">
+								<p><input type="text" name="tracking_number" #tracking_number = "ngModel"  [(ngModel)]="this.Trackingdata.tracking_number"  
+									  class="form-control" placeholder=""></p> 
+
+								<div class="button-holder clearfix">
+									<button type="sumit" class="thm-btn pull-left">Track Now <i class="fa fa-arrow-right"></i></button>
+									
+								</div>
+								<br><br>
+
+								<p>This will return up to 100 records matching your criteria.</p>
+							</div>
+						</li>
+					</ul>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>
+

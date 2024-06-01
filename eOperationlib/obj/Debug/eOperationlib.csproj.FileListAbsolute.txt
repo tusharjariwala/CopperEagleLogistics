@@ -1,0 +1,30 @@
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eOperationlib.dll.config
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eOperationlib.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eOperationlib.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eCommanLib.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\System.Data.SqlClient.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eCommanLib.pdb
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\eCommanLib.dll.config
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\System.Data.SqlClient.xml
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\obj\Debug\eOperationlib.csproj.AssemblyReference.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\obj\Debug\eOperationlib.csproj.CoreCompileInputs.cache
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\obj\Debug\eOperationlib.csproj.CopyComplete
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\obj\Debug\eOperationlib.dll
+C:\Users\TUSHAR JARIWALA\Project Logistics\Logistics\eOperationlib\obj\Debug\eOperationlib.pdb
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eOperationlib.dll.config
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eOperationlib.dll
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eOperationlib.pdb
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eCommanLib.dll
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\System.Data.SqlClient.dll
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eCommanLib.pdb
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\eCommanLib.dll.config
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\System.Data.SqlClient.xml
+E:\backup\git program\project_logistics\eOperationlib\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\backup\git program\project_logistics\eOperationlib\obj\Debug\eOperationlib.csproj.AssemblyReference.cache
+E:\backup\git program\project_logistics\eOperationlib\obj\Debug\eOperationlib.csproj.CoreCompileInputs.cache
+E:\backup\git program\project_logistics\eOperationlib\obj\Debug\eOperationlib.csproj.CopyComplete
+E:\backup\git program\project_logistics\eOperationlib\obj\Debug\eOperationlib.dll
+E:\backup\git program\project_logistics\eOperationlib\obj\Debug\eOperationlib.pdb

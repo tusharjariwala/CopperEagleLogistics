@@ -1,0 +1,86 @@
+
+<div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h2 class="page-title bold">Show Transport</h2>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-link active">Transport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="card table-card">
+                    <div class="card-header pb-0">
+                        <!-- <h4>Show Transport</h4> -->
+                        <button class="btn btn-success"><a routerLink="/admin/add-transportmanagement">Create</a></button>
+                        <!-- <p class="card-desc">Various Color Available with there Classes</p> -->
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-holder">
+                            <div class="table-responsive">
+                               <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                           
+                                            <th scope="col">trasport details</th>
+
+                                            <th scope="col">Type</th>
+                                            
+                                            
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let transport of transportlist;let no = index;" >
+                                            <td>{{no+1}}</td>
+                                            
+                                            
+                                           
+                                            <td>
+                                            <b>pick_up_date:</b>{{transport.pick_up_date}}<br>
+                                            <b>devlivery_date:</b>{{transport.devlivery_date}}<br>
+                                            <b>Vehicle_name:</b> {{transport.vehicle_name}}<br>
+                                          
+                                             <b>Fromwarehouse:</b>{{transport.fromwarehouse_fk}}<br>
+                                             <b>Towarehouse:</b>{{transport.towarehouse_fk}}</td>
+                                            <td>
+                                                <b>Type:</b>{{transport.type}}<br>
+                                             <b>Cargo_Type:</b>{{transport.cargo_type}}</td>
+                                            <!-- <td>{{transport.warehouse_name}}</td> -->
+                                            
+                                                  
+                                            
+                                            <td><a [routerLink]="['/admin/edit-transportmanagement/',transport.transport_id_pk]"> <i class="fas fa-edit"><span class="icon-text">edit</span></i></a><br>
+                                          <a (click)="DeleteTransport(transport.transport_id_pk)"><i class="fas fa-trash">
+                                             <span class="icon-text">Delete</span></i></a></td>
+                                             <td><a [routerLink]="['/admin/show-transportitems/',transport.transport_id_pk]">View trasportitems</a></td>
+                                           
+                                        </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+    </div>

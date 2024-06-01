@@ -1,0 +1,106 @@
+<app-header-emp></app-header-emp>
+<div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Customer</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">Customer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+               
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD Customer</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="customer_name" class="col-form-label">customer_name</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your employee email" name="customer_name" #name="ngModel" [(ngModel)]="this.customerData.customer_name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="company_name" class="col-form-label">company_name</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your company name " name="company_name" #companyname="ngModel" [(ngModel)]="this.customerData.company_name" required>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="company_contact" class="col-form-label">company_contact</label>
+                                                <input class="form-control" type="text" placeholder="company contact" name="company_contact" #companycontact="ngModel" [(ngModel)]="this.customerData.company_contact" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="phonenumber" class="col-form-label">phonenumber</label>
+                                                <input class="form-control" type="text" placeholder="phonenumber" name="phonenumber" #phonenumber="ngModel" [(ngModel)]="this.customerData.phonenumber" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="email" class="col-form-label">email</label>
+                                                <input class="form-control" type="text" placeholder="email" name="email" #email="ngModel" [(ngModel)]="this.customerData.email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="address1" class="col-form-label">address1</label>
+                                                <input class="form-control" type="text" placeholder="address1" name="address1" #address1="ngModel" [(ngModel)]="this.customerData.address1" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="city" class="col-form-label">city_name</label>
+                                                <select class="select2 form-control" name="city"  #cityname="ngModel" [(ngModel)]="this.customerData.city_id_fk"  [compareWith]="compareFn">
+                                                    <option value="0">select city name</option>
+                                                    <option *ngFor="let city of citylist;" value="{{city.city_id_pk}}">{{city.city_name}}</option>  
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+

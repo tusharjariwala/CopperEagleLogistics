@@ -1,0 +1,93 @@
+
+ <div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Transportitems</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">Transportitems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+               
+
+               
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD Transportitems</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form  (ngSubmit)="onSubmit(f)" #f="ngForm"  class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div class="row">
+                        
+                                        <!-- <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="pick_up_date" class="col-form-label">trasport pick_up_date</label>
+                                                <select class="select2 form-control" name="pick_up_date" #pickupdate="ngModel" [(ngModel)]="this.transportitemsData.transport_id_fk"  [compareWith]="trasportcompareFn">
+                                                    <option value="0">select pick_up_date</option>
+                                                    <option *ngFor="let trasport of transportlist;" value="{{trasport.transport_id_pk}}">{{trasport.pick_up_date}}</option>
+                                                </select>
+                                            </div>
+                                        </div> -->
+                                      
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="consignment_number" class="col-form-label">consignment_number</label>
+                                                <select class="select form-control" name="consignment_number"  #consignmentnumber="ngModel" [(ngModel)]="this.transportitemsData.consignment_id_fk"  [compareWith]="consignementFn">
+                                                    <option value="0">select consignment_number</option>
+                                                    <option *ngFor="let consignment of cosignmentlist;" value="{{consignment.consignment_id_pk}}">{{consignment.consignment_number}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="container_number" class="col-form-label">container_number</label>
+                                                <select class="select2 form-control" name="container_number" #containernumber="ngModel" [(ngModel)]="this.transportitemsData.container_id_fk" [compareWith]="conatinercompareFn">
+                                                    <option value="0">select container_number</option>
+                                                    <option *ngFor="let container of containerlist;" value="{{container.container_id_pk}}">{{container.container_number1}}</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                   
+                                
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+
+

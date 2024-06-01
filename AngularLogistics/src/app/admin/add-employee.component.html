@@ -1,0 +1,96 @@
+
+ <div class="page-wrapper">
+    
+    <div class="main-content">
+        <!-- Page Title Start -->
+      
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">Employee</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">Employee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+                
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD Employee</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div  class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="employee_name" class="col-form-label">employee_name</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your employee name" name="employee_name" #empName="ngModel" [(ngModel)]="this.employeeData.employee_name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="employee_email" class="col-form-label">employee_email</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your employee email" name="employee_email" #empEmail="ngModel" [(ngModel)]="this.employeeData.employee_email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="type" class="col-form-label">type</label>
+                                                <select class="select2 form-control" name="type" #type="ngModel" [(ngModel)]="this.employeeData.type" [compareWith]="compareFn" >
+                                                    <option selected >select type</option>
+                                                    <!-- <option *ngFor="let employee of employeeList;" value="{{employee.employee_id_pk}}">{{employee.type}}</option>
+                                                     -->
+                                                     
+                                                     <option  value="WarehouseManagement">WarehouseManagement</option>
+                                                     <option value="TransportManagement">TransportManagement</option>
+                                                     
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="employee_contactno" class="col-form-label">employee_contactno</label>
+                                                <input class="form-control" type="text" placeholder="employee contactno" name="employee_contactno" #empContact="ngModel" [(ngModel)]="this.employeeData.employee_contactno" required>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                   
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+   
+</div>
+

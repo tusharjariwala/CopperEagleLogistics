@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "H2jwpZEaGmHEHz6JKOPnuKtJf3vWhj6D7oVt5dtge7fj5DwoBcOjZlzYqmJybfRMitd6bWLSm0jPW80qAuGc1Q==",
+  "success": true,
+  "projectFilePath": "E:\\backup\\git program\\project_logistics\\logisticsAdmin\\logisticsAdmin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tushar Jariwala\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tushar Jariwala\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tushar Jariwala\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tushar Jariwala\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

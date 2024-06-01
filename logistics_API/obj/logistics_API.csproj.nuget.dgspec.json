@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\backup\\git program\\project_logistics\\logistics_API\\logistics_API.csproj": {}
+  },
+  "projects": {
+    "E:\\backup\\git program\\project_logistics\\eCommanLib\\eCommanLib.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\backup\\git program\\project_logistics\\eCommanLib\\eCommanLib.csproj",
+        "projectName": "eCommanLib",
+        "projectPath": "E:\\backup\\git program\\project_logistics\\eCommanLib\\eCommanLib.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\backup\\git program\\project_logistics\\eOperationlib\\eOperationlib.csproj": {
+      "restore": {
+        "projectUniqueName": "E:\\backup\\git program\\project_logistics\\eOperationlib\\eOperationlib.csproj",
+        "projectName": "eOperationlib",
+        "projectPath": "E:\\backup\\git program\\project_logistics\\eOperationlib\\eOperationlib.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "E:\\backup\\git program\\project_logistics\\eCommanLib\\eCommanLib.csproj": {
+                "projectPath": "E:\\backup\\git program\\project_logistics\\eCommanLib\\eCommanLib.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "E:\\backup\\git program\\project_logistics\\logistics_API\\logistics_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\backup\\git program\\project_logistics\\logistics_API\\logistics_API.csproj",
+        "projectName": "logistics_API",
+        "projectPath": "E:\\backup\\git program\\project_logistics\\logistics_API\\logistics_API.csproj",
+        "packagesPath": "C:\\Users\\Tushar Jariwala\\.nuget\\packages\\",
+        "outputPath": "E:\\backup\\git program\\project_logistics\\logistics_API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tushar Jariwala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\backup\\git program\\project_logistics\\eOperationlib\\eOperationlib.csproj": {
+                "projectPath": "E:\\backup\\git program\\project_logistics\\eOperationlib\\eOperationlib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

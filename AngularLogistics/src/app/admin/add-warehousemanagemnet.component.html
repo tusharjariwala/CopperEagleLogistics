@@ -1,0 +1,105 @@
+
+ <div class="page-wrapper">
+    <div class="main-content">
+        <!-- Page Title Start -->
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="page-title-wrapper">
+                    <div class="page-title-box">
+                        <h4 class="page-title">warehouse</h4>
+                    </div>
+                    <div class="breadcrumb-list">
+                        <ul>
+                            <li class="breadcrumb-link">
+                                <a href="index.html"><i class="fas fa-home mr-2"></i>Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-link active">warehouse</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- From Start -->
+        <div class="from-wrapper">
+            <div class="row">
+               
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>ADD warehouse</h4>
+                            <!-- <p class="card-desc">Here are examples of form add <code>.separate-form</code> tag with inputs.</p> -->
+                        </div>
+                        <div class="card-body">
+                            <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="separate-form">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <!-- <h5 class="from-title mb-1">Personal Info</h5> -->
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="warehouse_name" class="col-form-label">warehouse_name</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your warehouse name" name="warehouse_name" #warehousename="ngModel" [(ngModel)]="this.warehouseData.warehouse_name" required>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="address" class="col-form-label">address</label>
+                                                <input class="form-control" type="text" placeholder="Enter Your address" name="address" #warehouseaddress="ngModel" [(ngModel)]="this.warehouseData.address" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="type" class="col-form-label">type</label>
+
+                                                <select class="form-control" name="type1" #type="ngModel" [(ngModel)]="this.warehouseData.type1" [compareWith]="compareFn" >
+                                                <option selected >select type</option>
+                                               
+                                                 <option value="Start">Start</option>
+                                                 <option  value="Mid">Mid</option>
+                                                 <option value="End">End</option>
+                                                 <option value="Collection">Collection</option>
+                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="contactperson_name" class="col-form-label">contactperson_name</label>
+                                                <input class="form-control" type="text" placeholder="contactperson name" name="contactperson_name" #contactpersonname="ngModel" [(ngModel)]="this.warehouseData.contactperson_name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="contactperson_number" class="col-form-label">contactperson_number</label>
+                                                <input class="form-control" type="text" placeholder="contactperson number " name="contactperson_number" #contactpersonnumber="ngModel" [(ngModel)]="this.warehouseData.contactperson_number" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                            <div class="form-group">
+                                                <label for="capacity" class="col-form-label">capacity</label>
+                                                <input class="form-control" type="text" placeholder="capacity " name="capacity" #capacity="ngModel" [(ngModel)]="this.warehouseData.capacity" required>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                   
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">Submit</button>
+                                        <button class="btn btn-primary" (click)="onClear()">Clear</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ad-footer-btm">
+            <p>Copyright 2021-2024  © COPPEREAGLE LOGISTICS All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
